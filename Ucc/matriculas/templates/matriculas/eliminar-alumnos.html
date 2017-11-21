@@ -1,0 +1,11 @@
+{% extends 'matriculas/base.html' %}
+
+{% block titulo %}
+  <h2>Eliminar alumno - UCC</h2>
+{% endblock %}
+{% block contenido %}
+      {% csrf_token %}
+      <h2 style="text-align: center;">Esta seguro que desea eliminar al alumnos "{{ object }}"?</h2>
+      <input type="submit" value="Aceptar" class="btn btn-generico"style="margin-left:400px;"/>
+      <a href="{% url "alumno" %}"><button type="button"  class="btn btn-generico" >Regresar</button></a>
+{% endblock %}

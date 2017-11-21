@@ -1,0 +1,399 @@
+/* ESTILOS CATÁLOGO DE MEDIOS ANLA */
+/**--------GRUPO ASD---------**/
+
+/* =========== FUENTE ROBOT CONDENSED =========== */
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../fonts/RobotoBold/RobotoBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/RobotoBold/RobotoBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/RobotoBold/RobotoBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/RobotoBold/RobotoBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/RobotoBold/RobotoBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('../fonts/RobotoRegular/RobotoRegular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/RobotoRegular/RobotoRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/RobotoRegular/RobotoRegular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/RobotoRegular/RobotoRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/RobotoRegular/RobotoRegular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('../fonts/RobotoLight/RobotoLight.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/RobotoLight/RobotoLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/RobotoLight/RobotoLight.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/RobotoLight/RobotoLight.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/RobotoLight/v.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/*------------ LOGIN ----------------*/
+
+body {
+	background-color: #f2f3f7;
+	font-family: "Roboto", sans-serif;
+}
+.login-container {
+	position: relative;
+	background-color: #ffffff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 5% 2%!important;
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+.login-container label {
+	display: block;
+	text-align: left;
+	font-size: 1.2rem;
+	color: #9e9e9e;
+}
+.login-container .btn-generico {
+	width: 100%;
+}
+.login-container span {
+	color: #74a720;
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-top: 25px;
+	display: block;
+}
+.btnInicio {
+	padding: 80px 30px 160px!important;
+}
+.btnConsultar {
+	width: 285px;
+	height: 88px;
+	background-image: url("../img/btnMatriculas.png");
+	background-repeat: no-repeat;
+	background-position: 0 0 ;
+	display:inline-block;
+	overflow: hidden;
+	line-height: 9999;
+  margin: 0 auto;
+}
+.btnConsultar:hover {
+	background-position: 0 -88px;
+}
+.btnNuevo {
+	width: 285px;
+	height: 88px;
+	background-image: url("../img/btnAlumnos.png");
+	background-repeat: no-repeat;
+	background-position: 0 0 ;
+	display: inline-block;;
+	overflow: hidden;
+	line-height: 9999;
+  margin: 0 auto;
+}
+.btnNuevo:hover {
+	background-position: 0 -88px;
+}
+.btnCursos {
+	width: 285px;
+	height: 88px;
+	background-image: url("../img/btnCursos.png");
+	background-repeat: no-repeat;
+	background-position: 0 0 ;
+	display: inline-block;;
+	overflow: hidden;
+	line-height: 9999;
+	margin: 0 auto;
+}
+.btnCursos:hover {
+	background-position: 0 -88px;
+}
+
+.btnListar {
+	width: 285px;
+	height: 88px;
+	background-image: url("../img/btnListar.png");
+	background-repeat: no-repeat;
+	background-position: 0 0 ;
+	display: inline-block;;
+	overflow: hidden;
+	line-height: 9999;
+	margin: 0 auto;
+}
+.btnListar:hover {
+	background-position: 0 -88px;
+}
+
+.btn-generico {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#75a920+0,649525+50,2c7521+100 */
+	background: #75a920; /* Old browsers */
+	background: -moz-linear-gradient(left, #75a920 0%, #649525 50%, #		  2c7521 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #75a920 0%,#649525 50%,#2c7521 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #75a920 0%,#649525 50%,#2c7521 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75a920', endColorstr='#2c7521',GradientType=1 ); /* IE6-9 */
+	font-size: 1.3rem;
+	color: #fff;
+	padding: 10px 30px;
+
+}
+.btn-generico:hover, .btn-generico:focus {
+	background: rgba(100,145,27,1);
+	background: -moz-linear-gradient(left, rgba(100,145,27,1) 0%, rgba(31,89,22,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(100,145,27,1)), color-stop(100%, rgba(31,89,22,1)));
+	background: -webkit-linear-gradient(left, rgba(100,145,27,1) 0%, rgba(31,89,22,1) 100%);
+	background: -o-linear-gradient(left, rgba(100,145,27,1) 0%, rgba(31,89,22,1) 100%);
+	background: -ms-linear-gradient(left, rgba(100,145,27,1) 0%, rgba(31,89,22,1) 100%);
+	background: linear-gradient(to right, rgba(100,145,27,1) 0%, rgba(31,89,22,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64911b', endColorstr='#1f5916', GradientType=1 );
+	color: #ffffff;
+}
+.campo {
+	border: 1px solid #cdc8c8!important;
+	-webkit-border-radius: 5px!important;
+	-moz-border-radius: 5px!important;
+	border-radius: 5px!important;
+	padding-left: 5px!important;
+	padding-right: 5px!important;
+	font-size: 1.3rem!important;
+	text-align: center!important;
+	box-sizing: border-box!important;
+}
+.sheet {
+	bottom: -23px;
+	right: -33px;
+	width: 125px;
+	height: 51px;
+	background-image: url("../img/bg-login.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 3;
+}
+
+/*------------ CATÁLOGO ----------------*/
+
+h1.header {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.headerContainer {
+	margin: 18px 0;
+}
+.btn-salir {
+	color: #1f801b;
+	font-size: 1.3rem;
+	float: right;
+	margin-top: 20px;
+}
+.btn-salir:hover {
+	color: #0fae09;
+	text-decoration: underline;
+}
+.catalogo form .campo {
+	text-align: left!important;
+	padding: 10px 5px;
+	height: inherit;
+	font-size: 1.3rem!important;
+}
+.container-catalogo {
+	position: relative;
+	background-color: #ffffff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 3% 5% 3%;
+	margin-bottom: 50px;
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+.container-catalogo label {
+	font-size: 1.1rem;
+	color: #9e9e9e;
+}
+.form-catalogo {
+	border: 1px solid #ebebeb;
+	overflow: auto;
+    zoom: 1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 25px 15px 20px;
+}
+.form-catalogo .row {
+	margin-bottom: 0;
+}
+.logos h1 {
+	margin: 0;
+	line-height: 0;
+	display: inline-block;
+}
+.logos h1 img {
+	width: 85%;
+}
+.logo-catalogo {
+	float: right;
+	display: inline-block;
+	margin-top: 20px;
+}
+.titulo h2 {
+	background: url(../img/ico-catalogo.png) left center no-repeat;
+	padding-left: 100px;
+	color: #0d6e09;
+	font-size: 2.2rem;
+	min-height: 38px;
+	margin-bottom: 1.5rem;
+	margin-top: 10px;
+	padding-top: 6px;
+}
+.sheet2 {
+	bottom: -26px;
+	right: -59px;
+	width: 382px;
+	height: 121px;
+	background-image: url("../img/bg-CATALOGO.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -1;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #649525;
+    box-shadow: 0 1px 0 0 #75a920;
+}
+select {
+    font-family: "Roboto", sans-serif;
+}
+select:focus {
+    outline: 1px solid #649525;
+}
+.btnEdit {
+	width: 16px;
+	height: 16px;
+	display: block;
+	overflow: hidden;
+	background-image: url("../img/icoEdit.png");
+	background-position: 0 0;
+}
+.btnEdit:hover {
+	background-position: -16px 0;
+}
+.btnRemove {
+	width: 14px;
+	height: 14px;
+	display: block;
+	overflow: hidden;
+	background-image: url("../img/icoRemove.png");
+	background-position: 0 0;
+}
+.btnRemove:hover {
+	background-position: -14px 0;
+}
+
+/*------------ RESULTADOS ----------------*/
+
+.tablaResultados {
+	margin-top: 1rem;
+}
+.tablaResultados table thead th {
+	font-size: 1rem;
+	color: #75a920;
+}
+.tablaResultados table tbody td {
+	font-size: 1.1rem;
+	line-height: 1rem;
+	padding: 6px 5px;
+}
+.criterios {
+	padding: 1rem 0;
+	border-bottom: 1px solid #a0a0a0;
+}
+.criterios .col {
+	padding: 0 20px;
+}
+.criterios h3 {
+	color: #fa9d21;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 0;
+}
+.item1 {
+	font-size: 1rem;
+	margin-right: 15px;
+	display: block;
+	margin-bottom: 8px;
+}
+.item2 {
+	font-size: 1.1rem;
+	color:#75a920;
+	display: block;
+	margin-bottom: 8px;
+}
+.btnsResultado {
+	text-align: right;
+	padding: 1rem 0 2rem !important;
+}
+.btnsResultado > button {
+	margin-right: 20px;
+}
+.modal {
+	font-family: "Roboto", sans-serif;
+}
+.modal-title {
+    color: #0d6e09;
+}
+.modal-body {
+    margin-top: 20px;
+}
+.modal-body form label {
+    font-size: 1rem;
+}
+.modal-body h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 25px;
+    color: #333:
+}
+
+/*------------ MEDIAQUERYS ----------------*/
+
+@media (min-width: 0) and (max-width: 601px) {
+	.containerLogo {
+		overflow-x: hidden;
+	}
+	h1.header {
+	    margin: 0rem 0 1.68rem 0;
+	}
+	.logo-catalogo {
+	    margin-right: 5px;
+	}
+ 	.login-container {
+  		padding: 5% 10%!important;
+ 	}
+ 	.btn-generico {
+  		width: 100%;
+		margin-top: 2rem;
+		margin-right: 0!important;
+	}
+ 	.sheet2 {
+
+ 	}
+ 	.titulo h2 {
+    	font-size: 1.2rem;
+  	}
+  	table.responsive-table thead {
+    	width: 50%;
+	}
+	.tablaResultados {
+		overflow: auto;
+	}
+	.tablaResultados table thead th {
+		padding: 5px 5px;
+    	line-height: 10px;
+	}
+	.tablaResultados table tbody td {
+	    font-size: 0.7rem;
+	    padding: 4px 5px;
+	}
+	.btnConsultar {
+		margin-bottom: 35px;
+	}
+}
+@media only screen and (min-width: 993px) {
+	.container {
+	    width: 90%;
+	    max-width: 1500px;
+	}
+}

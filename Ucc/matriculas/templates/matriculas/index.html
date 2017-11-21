@@ -1,0 +1,16 @@
+{% extends 'matriculas/base.html' %}
+
+Opciones - Matriculas UCC
+{% block titulo %}
+  <h2>Opciones - Matriculas UCC</h2>
+{% endblock %}
+{% block contenido %}
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <a href="{% url 'realizar-matricula' %}" class="btnConsultar"></a>
+      <a href="{% url 'crear-alumnos' %}" class="btnNuevo"></a>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <a href="{% url 'crear-cursos' %}" class="btnCursos"></a>
+      <a href="{% url 'alumno' %}" class="btnListar"></a>
+  </div>
+{% endblock %}

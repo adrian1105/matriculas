@@ -1,0 +1,13 @@
+{% extends 'matriculas/base.html' %}
+
+{% block titulo %}
+  <h2>Realizar matriculas - UCC</h2>
+{% endblock %}
+{% block contenido %}
+  {% csrf_token %}
+  <div style="margin-left:400px;">
+    {{ form.as_p }}
+  </div>
+  <input type="submit" name="" value="Crear"  class="btn btn-generico" style="margin-left:410px;">
+  <a href="{% url "index" %}"><button type="button"  class="btn btn-generico">Regresar</button></a>
+{% endblock %}

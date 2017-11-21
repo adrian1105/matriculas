@@ -1,0 +1,14 @@
+{% extends 'matriculas/base.html' %}
+
+{% block titulo %}
+  <h2>Modificar alumno - UCC</h2>
+{% endblock %}
+{% block contenido %}
+      {% csrf_token %}
+      <div style="margin-left:400px;">
+        {{ form.as_p }}
+      </div>
+      <br>
+      <input type="submit" value="Update" class="btn btn-generico" style="margin-left:430px;"/>
+      <a href="{% url "alumno" %}"><button type="button"  class="btn btn-generico">Regresar</button></a>
+{% endblock %}

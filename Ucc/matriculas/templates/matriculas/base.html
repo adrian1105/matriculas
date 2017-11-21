@@ -1,0 +1,75 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Matriculas - UCC</title>
+  <!-- CSS  -->
+  <link href="{% static 'matriculas/' %}css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'matriculas/' %}css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <div class="section catalogo">
+    <div class="container">
+    <div class="logos">
+      <div class="row headerContainer">
+        <div class="col-xs-12">
+          <div class="logo-catalogo">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-catalogo z-depth-4">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 titulo">
+          {% block titulo %}
+
+          {% endblock %}
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+          <a href="#" class="btn-salir" data-toggle="modal" data-target="#myModal3">Cerrar sesión</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-catalogo btnInicio clearfix">
+          <form class="" action="" method="post">
+            {% block contenido %}
+            {% endblock %}
+          </form>
+        </div>
+      </div>
+      <div class="sheet2 hide-on-small-only"></div>
+    </div> <!-- CONTAINER CATÁLOGO -->
+
+    </div> <!-- CONTAINER -->
+  </div>
+  <!--  Scripts-->
+
+  <div id="myModal3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Salir de la aplicación</h4>
+              </div>
+              <div class="modal-body">
+                  <h3>¿Confirma que desea salir de la aplicación?</h3>
+              </div>
+              <div class="modal-footer">
+                  <a href="{% url "logout" %}"><button type="button" class="btn btn-generico">Aceptar</button></a>
+                  <button type="button" class="btn btn-generico" data-dismiss="modal">Cancelar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="{% static 'matriculas/' %}js/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'matriculas/' %}js/bootstrap.min.js"></script>
+  <script src="{% static 'matriculas/' %}js/init.js"></script>
+
+  </body>
+</html>

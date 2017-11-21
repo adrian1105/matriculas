@@ -1,0 +1,35 @@
+{% extends 'matriculas/base.html' %}
+{% block titulo %}
+  <h2>Listados de alumnos - UCC</h2>
+{% endblock %}
+{% block contenido %}
+{% csrf_token %}
+<div class="tablaResultados col-xs-12">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>CEDULA</th>
+                <th>NOMBRES</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        {% for alumno in matriculas %}
+        <tbody>
+            <tr>
+                <td><a href="{% url "detail" alumno.id %}">{{ alumno.id }}</a></td>
+                <td>{{ alumno.cedula }}</td>
+                <td>{{ alumno.NombreCompleto }}</td>
+                <td><a href="{% url "actualizar-alumno" alumno.id %}">Editar</a></td>
+                <td><a href="{% url "eliminar-alumno" alumno.id %}">Eliminar</a></td>
+                <!-- <th><a href="#" title="Editar" class="btnEdit" data-toggle="modal" data-target="#myModal2"  onkeyup="copiar()"></a></th>
+                <th><a href="#" title="Eliminar" class="btnRemove" data-toggle="modal" data-target="#myModal3"></th> -->
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</div><!-- TABLA RESULTADOS -->
+  <a href="{% url "index" %}"><button type="button"  class="btn btn-generico" style="margin-left:430px;">Regresar</button></a>
+  <a href="{% url 'crear-alumnos' %}"><button type="button"  class="btn btn-generico">Crear alumno</button></a>
+{% endblock %}
